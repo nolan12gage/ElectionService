@@ -1,0 +1,226 @@
+/* type selectors */
+
+html {
+	background-color: rgb(128,0,32);
+}
+
+/*Img in the header*/
+header {
+	height: 200px;
+	width: ;
+	padding: 0;
+}
+ 
+header img { 
+	display:inline-block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+p {
+	font-size: 75%;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-size: 40px;
+	text-align: center;
+}
+
+main {
+	width: 500px;
+	padding: 20px 20px 0 20px;
+	float:left;
+
+}
+aside {
+	position: relative;
+	padding: 50px 10px;
+	width: 210px;
+	height: 500px;
+	float:left;
+}
+
+#rightside {
+	position: relative;
+	float: left;
+	width: 200px;
+	padding: 20px 15px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 1000px;
+	height: 90%;
+	background-color: rgb(200,200,200);
+	margin: 1em auto;
+	//padding-top: 1em;
+	//border: 5px solid green;
+	text-align: center; 
+
+}
+
+
+
+
+/* links design*/
+
+/*a:hover, a:focus { 
+	color: blue; 
+	font-size: 100%;
+	//text-transform:uppercase;
+}
+a:visited { 
+	
+	}
+
+a:link { 
+	color: white; 
+}*/
+
+
+table {
+	/*float: center;*/
+	margin: 0 auto;
+    /*border: 1px solid black;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 40%;*/
+}
+
+
+/* The styles for the navigation menu - 2tire */
+#menu ul {	
+	list-style-type: none; 
+	position: relative;	
+	//left:15%;
+	height: 50px;
+	margin: 0;
+	//padding-bottom:50px;
+	padding: 0;
+}
+#menu ul li { 
+	//float: left;
+	width: 150px;
+	height: 50px;
+}
+
+/*design element in nav id=menue*/
+#menu ul li a {
+	margin: 0 auto;
+    text-align: center;  
+    padding: 10px 0;   
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+ 
+}
+
+#menu ul li a:hover, a:focus {
+
+    color: blue;
+ 
+}   
+
+/* design footer */
+footer {
+	clear: both;
+	height: 30px;
+	padding: auto;
+	margin-bottom: 0;
+	text-align:center; 
+	color: white;
+	font-size: 0.8em;/*changed from 80%, 12.8/16=.8em*/
+	background: teal;
+}
+
+footer p {
+	padding: 5px 0;
+	font-size: 1em;
+}
+button {
+    background-color: yellow;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width:50%;
+    /*margin-left: 25%;*/ 
+}
+
+.formError {
+  color: red;
+}
+
+#leaderboard {
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.search_form input[type=text] {
+  padding: 10px 0px 10px 0px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.search_form button {
+  float: left;
+  width: 20%;
+  padding: 10px 0px 10px 0px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+	margin:0
+}
+
+form.search_form button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.search_form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.add_cart input {
+	height: 40px;
+	width: 10%;
+	font-size: 100%;
+}
+form.add_cart button {
+	background-color: grey;
+	height: 40px
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width:25%;
+  /*margin-left: 25%;*/
+}
+
+form.view_order button {
+	background-color: grey;
+	height: 40px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width:100%;
+  /*margin-left: 25%;*/
+}
+
+.notbold{
+    font-weight:normal
+}​

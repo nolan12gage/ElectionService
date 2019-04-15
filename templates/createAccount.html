@@ -1,0 +1,153 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Euchre Login</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../static/images/Euchre.png">
+    <link rel="stylesheet" href="../static/styles/main.css">
+    
+</head>
+<body style="width: 30%">-->
+
+{% extends "layout.html" %}
+{% block main %}
+<h1>Create an Account</h1>
+
+<form method="post">
+  First Name:<br>
+  <input type="text" name="fname" value="{{fname}}" >
+  {% if idErr %}
+  <span class ="formError"> *{{fNameErr}}</span>
+  {% endif %}
+  <br><br>
+  Last Name:<br>
+  <input type="text" name="lname" value="{{lname}}" >
+  {% if idErr %}
+  <span class ="formError"> *{{lNameErr}}</span>
+  {% endif %}
+  <br><br>	
+  User ID:<br>
+  <input type="text" name="username" value="{{username}}" >
+  {% if idErr %}
+  <span class ="formError"> *{{idErr}}</span>
+  {% endif %}
+  <br><br>
+  Email Address:<br>
+  <input type="text" name="email" value="{{email}}" >
+  {% if emailErr %}
+  <span class ="formError"> *{{emailErr}}</span>  
+  {% endif %}
+  <br><br>
+  Password:<br>
+  <input type="password" name="password" value="{{password}}" >
+  {% if pwErr %}
+  <span class ="formError"> *{{pwErr}}</span>  
+  {% endif %}
+  <br><br>
+  Confirm Password:<br>
+  <input type="password" name="confirmPassword" value="{{confPass}}" >
+  {% if confErr %}
+  <span class ="formError"> *{{confErr}}</span>  
+  {% endif %}
+  <br><br>
+	Address:<br>
+  <input type="text" name="address" value="{{address}}" >
+  {% if addErr %}
+  <span class ="formError"> *{{addErr}}</span>  
+  {% endif %}  
+  <br><br>
+	City:<br>
+  <input type="text" name="city" value="{{city}}" >
+  {% if cityErr %}
+  <span class ="formError"> *{{cityErr}}</span>  
+  {% endif %}  
+  <br><br>
+  State:<br>
+<select name="state">
+	{% if state %}
+	<option value="{{state}}" selected>{{state}}</option>
+	{% else %}
+	<option value="">State...</option>
+	{% endif %}
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+  {% if stateErr %}
+  <span class ="formError"> *{{stateErr}}</span>  
+  {% endif %}
+	<br><br>
+	Zip:<br>
+  <input type="text" name="zip" value="{{zip}}" >
+  {% if zipErr %}
+  <span class ="formError"> *{{zipErr}}</span>  
+  {% endif %}  
+  <br><br>
+  <button type="submit" >Create Account</button>
+
+  <!--<button onclick="goBack()">Go Back</button>
+  <script>
+	function goBack() {
+	    window.history.back(); //this doesn't work right now
+	}
+  </script> 
+
+  <br><br>
+  <input type="checkbox" checked="checked"> Remember me -->
+</form> 
+<br>
+{% endblock %}
+
+<!--</body>
+<footer>
+      &copy; Copyright 2017 CIS525 Term Project, University of Michigan, Dearborn, Michigan.
+</footer>
+</html>-->

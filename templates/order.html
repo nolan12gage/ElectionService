@@ -1,0 +1,38 @@
+
+
+{% extends "layout.html" %}
+{% block main %}
+<br>
+<h2>Order #{{orderID}}</h2>
+<h4>Details</h4>
+<h5>Order Date: <span class='notbold'>{{orderInfo[1]}}</span></h5>
+<table style="width:80%" border="1">
+  <tr>
+    <th>Card Name</th>
+    <th>Qty</th> 
+    <th>Unit Price</th>
+  </tr>
+	{% for item in items%}
+  <tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td> 
+    <td>${{item[2]}}</td>
+  </tr>
+	{% endfor %}
+</table>
+<h5>Order Total: <span class='notbold'>${{total}}</span></h5>
+<br>
+<h4>Shipment Tracking</h4>
+<h5>USPS Tracking #: <span class='notbold'>{{trackNo}}</span></h5>
+<h5>Shipment Summary: <span class='notbold'>{{tracking['TrackResponse']['TrackInfo']['TrackSummary']}}</span></h5>
+<table style="width:100%" border="1">
+	<tr>
+		<th>Tracking History</th>
+  <tr>
+	{% for detail in tracking['TrackResponse']['TrackInfo']['TrackDetail'] %}
+    <td align="left">{{detail}}</td>
+  </tr>
+	{% endfor %}
+</table><br><br>
+{% endblock %}
+

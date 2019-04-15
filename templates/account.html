@@ -1,0 +1,36 @@
+
+
+{% extends "layout.html" %}
+{% block main %}
+<br><h3>Account Info</h3>
+<h5>Username: <span class='notbold'>{{info[0]}}</span></h5>
+<h5>Full Name: <span class='notbold'>{{info[1]}} {{info[2]}}</span></h5>
+<h5>Mailing Address: <span class='notbold'>{{info[3]}}</span></h5>
+<h5>City/State/ZIP: <span class='notbold'>{{info[4]}}, {{info[5]}} {{info[6]}}</span></h5>
+<h5>Email Address: <span class='notbold'>{{info[7]}}</span></h5>
+<br>
+<h3>Order History</h3><br>
+<table style="width:80%" border="1">
+
+  <tr>
+    <th>Order Number</th>
+    <th>Date of Purchase</th>
+		<th>Action</th>
+  </tr>
+	{% for item in orders%}
+  <tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td>
+		<td>
+			<form id="{{item[0]}}"class="view_order" action="{{url_for('order')}}" method="post" style="display: inline;"> <!-- might change this class for formatting -->
+			<input type="hidden" name="orderID" value="{{item[0]}}">
+			<input type="hidden" name="trackNo" value="{{item[2]}}">
+			<button type="submit">View Order</button>
+			</form>
+		</td>
+  </tr>
+	{% endfor %}
+</table><br>
+
+{% endblock %}
+

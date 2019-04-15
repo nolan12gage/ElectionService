@@ -1,0 +1,143 @@
+/* type selectors */
+
+html {
+	Background-color: rgb(128,0,32);
+}
+
+/*Img in the header*/
+header img { 
+	display:inline-block;
+	margin: 0 auto;
+	height: 50px;
+}
+
+h1{
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Standard 960 and above*/
+/*body section*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 1000px;
+	max-width: 1200px; /*max width of the page*/
+	background-color: green;
+	margin: 1em auto;
+	padding-top: 1em;
+	border: 5px solid green;
+
+}
+
+
+
+
+/* links design*/
+a:link { color: #931420; 
+}
+a:hover, a:focus { color: blue; font-size: 125%;text-transform:uppercase;
+}
+a:visited { color: #f2972e; }
+
+
+table {
+	float: center;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 40%;
+}
+
+/* The styles for the navigation menu - 2tire */
+#menu ul {	list-style-type: none; position: relative;	left:15%;
+}
+#menu ul li { float: left;
+}
+
+/* designthe navigation menu */
+#menu ul {
+	margin: 0;
+	padding-bottom:50px;
+}
+/*design element in nav id=menue*/
+#menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;      
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+ 
+}
+/*ul inside ul*/       
+             
+
+} 
+#menu ul li {
+	float: left;
+	
+}
+/*hover the child of li*/
+#menu ul li:hover > ul {         
+      width: 100%; /*full width of list*/                                  
+     display: block; /*display when hover*/
+} 
+
+/* design footer */
+footer {
+	clear: both;
+	margin-top: 1em;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	margin-bottom: 0;
+	text-align:center; 
+	color: black;
+	font-size: 0.8em;/*changed from 80%, 12.8/16=.8em*/
+	background: #FFD700;
+}
+button {
+    background-color: yellow;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width:50%;
+    margin-left: 25%; 
+}
+
+.formError {
+  color: yellow;
+}
+
+#leaderboard {
+  
+}
+
+/* music buttons */
+#playbtn {
+	position:absolute;
+	top:300px;
+
+	cursor:pointer;
+	width:10%;
+    border: none;
+    background: none;
+	outline: none;
+	display:block;
+	margin:0;
+}
+
+#stopbtn {
+	position:absolute;
+	top:400px;
+
+	cursor:pointer;
+	width:10%;
+    border: none;
+    background: none;
+	outline: none;
+	display:block;
+	margin:0;
+}
+>>>>>>> Stashed changes

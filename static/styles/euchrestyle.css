@@ -1,0 +1,120 @@
+/*body {
+    text-align: center;  
+}*/
+
+/*p {
+	font-size: 75%;
+	padding: 0;
+	margin: 0;
+}*/
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.gameplay {
+	background-color: buttonface;
+}
+
+#newgame {
+	margin-top: 10px;
+}
+
+#game_table {
+	margin: auto;
+	//background-color: rgb(220,220,220);
+	background-color: green;
+	position: relative;
+	//float: left;
+	border: 2px solid;
+	border-color: black;
+}
+
+#north {
+	position: absolute;
+	background-color: red;
+}
+
+#west {
+	position: absolute;
+	background-color: blue;
+}
+
+#east {
+	position: absolute;
+	background-color: blue;
+}
+
+#south {
+	position: absolute;
+	background-color: red;
+}
+
+#center {
+	position: absolute;
+	background-color: grey;
+}
+
+#northplay {
+	position: absolute;
+	background-color: red;
+}
+
+#westplay {
+	position: absolute;
+	background-color: blue;
+}
+
+#eastplay {
+	position: absolute;
+	background-color: blue;
+}
+
+#southplay {
+	position: absolute;
+	background-color: red;
+}
+
+
+#northpoints {
+	position: absolute;
+	background-color: red;
+}
+
+#westpoints {
+	position: absolute;
+	background-color: blue;
+}
+
+#eastpoints {
+	position: absolute;
+	background-color: blue;
+}
+
+#southpoints {
+	position: absolute;
+	background-color: red;
+}
+
+#west a {
+	transform: rotate(90deg);
+	transform-origin: top left;
+}
+
+#east a {
+	transform: rotate(270deg);
+	transform-origin: top right;
+}
+
+#westplay a {
+	transform: rotate(90deg);
+	transform-origin: top left;
+}
+
+#eastplay a {
+	transform: rotate(270deg);
+	transform-origin: top right;
+}
+
+

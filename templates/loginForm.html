@@ -1,0 +1,26 @@
+
+
+{% extends "layout.html" %}
+{% block main %}
+
+<h1>Please Sign In</h1>
+{% if loginErr %}
+<p class ="formError"> *{{loginErr}}</p>  
+<br>
+{% endif %}
+<form method="post">
+  User ID:<br>
+  <input type="text" name="username" value="{{username}}" >
+  <br><br>
+  Password:<br>
+  <input type="password" name="password" value="" required>
+  <br><br>
+  <button type="submit" >Login</button>
+  
+</form> 
+<br><br>
+
+<p>Don't have an account? <a href='join'>Create one</a></p>
+
+
+{% endblock %}

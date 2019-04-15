@@ -1,0 +1,29 @@
+
+
+{% extends "layout.html" %}
+{% block main %}
+
+{% if not err %}
+<h5>Card name: <span class='notbold'>{{cardName}}</span></h5>
+<img src="{{imgLink}}" height="352", width="252"><br>
+<h5>Purchase Price: <span class='notbold'>${{price}}</span></h5><br>
+	{% if 'username' in session%}
+	<p>Select Quantity (1-4): </p>
+	<form class="add_cart" action="{{url_for('cart')}}" method="post">
+  <input type="number" name="qty" value="1" min="1" max="4">
+	<input type="hidden" id="cardName" name="cardName" value="{{cardName}}">
+	<input type="hidden" id="price" name="price" value="{{price}}">
+	<input type="hidden" id="empty" name="empty" value="none">
+	<button type="submit">Add to Cart</button>
+	</form>
+	{% else %}
+	<h5>Must be logged in to purchase items<h5>
+	{% endif %}
+{% else %}
+<h2>{{err}}</h2>
+<h4><a href="/">Try again</a></h4>
+{% endif %}
+
+<br>
+{% endblock %}
+

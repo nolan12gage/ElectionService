@@ -1,0 +1,27 @@
+
+{% extends "layout.html" %}
+{% block main %}
+
+<h1>Leaderboard</h1>
+<br>
+<table id="leaderboard">
+  <tr>
+    <th>Username</th>
+    <th>Career Wins</th>
+    <th>Age</th>
+    <th>Location</th>
+    <th>Last Login</th>
+  </tr>
+  {% for ldr in leaders %}
+  <tr>
+    <td>{{ldr[0]}}</td>
+    <td>{{ldr[1]}}</td>
+    <td>{{ldr[2]}}</td>
+    <td>{{ldr[3]}}</td>
+    <td>{{ldr[4]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
+
