@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block main %}
+ 
+
+<h2>Start a new election</h2>
+<!-- The form -->
+<form class="start_form" action="http://127.0.0.1:5000/coordinator/election" method="post">
+  <button type="submit" class="start_button">START</button>
+</form>
+{% endblock %}

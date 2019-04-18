@@ -1,60 +1,26 @@
 <!doctype html>
 <html lang="en">
 	<head>
-    	<title>MagicStore</title>
+    	<title>Project 2</title>
     	<meta charset="utf-8">
     	<link rel="shortcut icon" href="../static/images/banner.jpg">
     	<link rel="stylesheet" href="../static/styles/main.css">
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     	<link rel="stylesheet" type="text/css" href="static/styles/euchrestyle.css">
-		<script src="{{url_for('static', filename='js/tableCreateAndStyle.js')}}"></script>
-		<script src="{{url_for('static', filename='js/oop.js')}}"></script>
-		<script src="{{url_for('static', filename='js/interfaceFunctions.js')}}"></script>
 		
 	</head>
 	<body>
-		<header>
-			<img src="../static/images/banner.jpg" alt="mgic" width="1000">
-		</header>
-		<aside>
-			<nav id="menu">
-		    	<ul>
-		    		<li><a href="/">Home/Search</a></li>
-						{% if 'username' in session %}
-						<li><a href="account">My Account</a></li>
-						<li><a href="cart">Cart</a></li>
-						<li><a href="logout">Log Out</a></li>
-						{% else %}
-						<li><a href="login">Log In</a></li>
-						{% endif %}
-
-    
-		    	</ul>
-		    </nav>
-	    </aside>
-
 
 	<main/>
-
 
 	{% block main %}
 
 	{% endblock %}
 	
 	</main>
-	<div id='rightside'>
-		{% if 'username' in session %}
-		<p>Logged in as {{session['username']}}</p>
-		{% endif %}
-
-		{% block body %}
-
-		{% endblock %}
-
-	</div>
 
 	<footer>
-		<p>&copy; Copyright 2019 CIS571 Project 1: University of Michigan, Dearborn, Michigan.</p>
+		<p>&copy; Copyright 2019 CIS571 Project 2: University of Michigan, Dearborn, Michigan.</p>
 	</footer>
 	
 

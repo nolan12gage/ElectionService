@@ -9,6 +9,7 @@ header {
 	height: 200px;
 	width: ;
 	padding: 0;
+	text-align: center;
 }
  
 header img { 
@@ -29,26 +30,18 @@ h1{
 	text-align: center;
 }
 
+h2{
+	font-size: 40px;
+	text-align: center;
+}
+
 main {
-	width: 500px;
+	width: 100%;
 	padding: 20px 20px 0 20px;
 	float:left;
 
 }
-aside {
-	position: relative;
-	padding: 50px 10px;
-	width: 210px;
-	height: 500px;
-	float:left;
-}
 
-#rightside {
-	position: relative;
-	float: left;
-	width: 200px;
-	padding: 20px 15px;
-}
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -140,14 +133,14 @@ footer p {
 	padding: 5px 0;
 	font-size: 1em;
 }
-button {
+/*button {
     background-color: yellow;
     padding: 14px 20px;
     margin: 8px 0;
     cursor: pointer;
     width:50%;
-    /*margin-left: 25%;*/ 
-}
+    /*margin-left: 25%;
+}*/
 
 .formError {
   color: red;
@@ -171,18 +164,7 @@ form.search_form input[type=text] {
   background: #f1f1f1;
 }
 
-/* Style the submit button */
-form.search_form button {
-  float: left;
-  width: 20%;
-  padding: 10px 0px 10px 0px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-	margin:0
+
 }
 
 form.search_form button:hover {
@@ -219,6 +201,29 @@ form.view_order button {
   cursor: pointer;
   width:100%;
   /*margin-left: 25%;*/
+}
+
+.start_form {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.start_button {
+  background-color: #4CAF50;
+  border: 3px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .notbold{

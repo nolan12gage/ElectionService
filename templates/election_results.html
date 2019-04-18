@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block main %}
+ 
+
+<h2> Election Results </h2>
+<!-- The form -->
+{% for election in election_list%}
+<h4>{{election}}</h4>
+{% endfor %}
+<br>
+<br>
+{% endblock %}
